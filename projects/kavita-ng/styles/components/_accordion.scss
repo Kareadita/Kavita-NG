@@ -1,0 +1,87 @@
+@use '../functions' as *;
+
+.accordion-header {
+  font-weight: bold;
+  color: token('accordion-header-text-color');
+}
+
+.accordion-item {
+  background-color: token('accordion-surface-bg-color');
+  color: token('accordion-body-text-color');
+  border: 1px solid token('accordion-body-border-color');
+  border-radius: token('accordion-radius');
+  overflow: hidden;
+  transition: border-color 0.15s ease-in-out;
+
+  &:hover {
+    border-color: token('accordion-border-hover-color');
+  }
+
+  // Bootstrap collapses borders and radii between stacked items, this separates them into tiles
+  & + .accordion-item {
+    margin-top: token('accordion-gap');
+  }
+
+  .accordion-body {
+    background-color: token('accordion-active-body-bg-color');
+    border-top: 1px solid token('accordion-hairline-color');
+    padding: 1.25rem 1.375rem 1.5rem;
+  }
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.125rem;
+  background-color: token('accordion-header-bg-color');
+  color: token('accordion-header-text-color');
+
+  &::after {
+    content: none;
+  }
+
+  &:not(.collapsed) {
+    color: token('accordion-header-text-color');
+    background-color: token('accordion-header-bg-color');
+    box-shadow: token('accordion-body-box-shadow');
+
+    i {
+      transform: rotate(180deg);
+      transition:
+        transform 0.15s ease-in-out,
+        color 0.15s ease-in-out;
+    }
+  }
+
+  &.collapsed {
+    color: token('accordion-header-collapsed-text-color');
+    background-color: token('accordion-header-collapsed-bg-color');
+
+    i {
+      transition:
+        transform 0.15s ease-in-out,
+        color 0.15s ease-in-out;
+    }
+  }
+
+  i {
+    color: token('accordion-chevron-color');
+  }
+
+  &:hover i {
+    color: token('accordion-chevron-hover-color');
+  }
+
+  &:focus {
+    border-color: token('accordion-button-focus-border-color');
+    box-shadow: token('accordion-button-focus-box-shadow');
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion-item,
+  .accordion-button i {
+    transition: none;
+  }
+}

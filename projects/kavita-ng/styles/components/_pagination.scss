@@ -1,0 +1,37 @@
+@use '../functions' as *;
+
+.pagination {
+  margin-bottom: 0;
+}
+
+.page-item {
+  &.active .page-link {
+    background-color: token('pagination-active-link-bg-color');
+    color: token('pagination-active-link-text-color');
+    border-color: token('pagination-active-link-border-color');
+
+    &:hover {
+      color: token('pagination-link-text-color');
+    }
+  }
+
+  > .page-link {
+    background-color: token('pagination-link-bg-color');
+    border-color: token('pagination-link-border-color');
+    color: token('pagination-link-text-color');
+
+    &:hover {
+      color: token('pagination-link-hover-color');
+      text-decoration: none;
+    }
+  }
+
+  &:focus {
+    border-color: token('pagination-focus-border-color');
+  }
+
+  &.disabled .page-link {
+    background-color: token('pagination-link-disabled-bg-color');
+    border-color: token('pagination-link-border-color');
+  }
+}

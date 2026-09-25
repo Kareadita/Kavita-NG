@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use 'tokens' as data;
+
+@function token($name) {
+  @if not map.has-key(data.$tokens, $name) {
+    @error 'Unknown kavita-ng token: #{$name}';
+  }
+  $parent: map.get(data.$tokens, $name);
+  @if $parent {
+    @return var(--kng-#{$name}, token($parent));
+  }
+  @return var(--kng-#{$name});
+}

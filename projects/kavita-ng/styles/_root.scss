@@ -1,0 +1,5 @@
+@use 'tokens' as data;
+
+:root {
+  @include data.root-defaults;
+}

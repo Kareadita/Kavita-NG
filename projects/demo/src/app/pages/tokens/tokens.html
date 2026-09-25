@@ -1,0 +1,56 @@
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+  <h1>Tokens</h1>
+  <button type="button" class="btn btn-secondary btn-sm" (click)="reset()">Reset overrides</button>
+</div>
+<p>
+  Every <code>--kng-*</code> variable. Type a value in the Override column to set it on
+  <code>body</code>, the way a host theme does. A derived token has no default of its own and
+  follows the token it derives from until something sets it.
+</p>
+
+@for (group of groups; track group.name) {
+  <h2 class="h5 mt-4">{{ group.name }}</h2>
+  <div class="table-responsive">
+    <table class="table table-sm align-middle">
+      <thead>
+        <tr>
+          <th scope="col" class="swatch-col"></th>
+          <th scope="col">Token</th>
+          <th scope="col">Default</th>
+          <th scope="col">Override</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of group.rows; track row.cssVar) {
+          <tr>
+            <td>
+              @if (row.swatch) {
+                <div class="swatch" [style.background]="row.swatch"></div>
+              }
+            </td>
+            <td>
+              <code>{{ row.cssVar }}</code>
+            </td>
+            <td class="small">
+              @if (row.derivedFrom) {
+                <span class="text-muted">follows</span> <code>{{ row.derivedFrom }}</code>
+              } @else if (row.defaultValue === null) {
+                <span class="text-muted">none</span>
+              } @else {
+                <code class="default-value">{{ row.defaultValue }}</code>
+              }
+            </td>
+            <td>
+              <input
+                class="form-control form-control-sm"
+                [attr.aria-label]="'Override ' + row.cssVar"
+                [value]="overrides()[row.cssVar] ?? ''"
+                (input)="setOverride(row.cssVar, $any($event.target).value)"
+              />
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}

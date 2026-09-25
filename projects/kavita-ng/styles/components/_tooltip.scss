@@ -1,0 +1,14 @@
+@use '../functions' as *;
+
+.tooltip {
+  --bs-tooltip-opacity: 1;
+}
+
+.tooltip-arrow {
+  --bs-tooltip-bg: #{token('tooltip-caret-color')};
+}
+
+.tooltip-inner {
+  background-color: token('tooltip-bg-color');
+  border: 0.125rem solid token('tooltip-outline-color');
+}

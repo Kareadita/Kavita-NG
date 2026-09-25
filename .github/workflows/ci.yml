@@ -20,7 +20,9 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run lint
+      - run: npm run tokens:check
       - run: npx ng test kavita-ng
+      - run: npx ng test kavita-ng -c browser
       - run: npx ng test demo
       - run: npx ng build kavita-ng
       - run: npx ng build demo

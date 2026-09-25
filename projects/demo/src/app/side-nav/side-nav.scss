@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  width: 15rem;
+  flex-shrink: 0;
+  overflow-y: auto;
+  border-right: 1px solid var(--kng-hr-color);
+}
+
+@media (max-width: 767.98px) {
+  :host {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 1020;
+    border-right: none;
+    background-color: var(--kng-body-bg-color);
+  }
+
+  :host(.open) {
+    display: block;
+  }
+}
+
+.group-heading {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--kng-text-muted-color);
+}
+
+a {
+  color: var(--kng-body-text-color);
+  border-left: 0.1875rem solid transparent;
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--kng-elevation-layer2);
+  }
+
+  &.active {
+    color: var(--kng-primary-color);
+    border-left-color: var(--kng-primary-color);
+    background-color: color-mix(in srgb, var(--kng-primary-color) 12%, transparent);
+  }
+}

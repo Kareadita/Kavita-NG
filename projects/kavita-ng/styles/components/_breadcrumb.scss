@@ -1,0 +1,11 @@
+@use '../functions' as *;
+
+.breadcrumb {
+  background-color: token('breadcrumb-bg-color');
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+
+  .breadcrumb-item {
+    color: token('breadcrumb-item-text-color');
+  }
+}

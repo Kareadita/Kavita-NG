@@ -1,0 +1,21 @@
+@use '../functions' as *;
+
+.form-check-input {
+  background-color: token('checkbox-bg-color');
+  border-color: token('checkbox-border-color');
+  cursor: pointer;
+
+  &:checked {
+    background-color: token('checkbox-checked-bg-color');
+    border-color: token('checkbox-checked-bg-color');
+  }
+
+  &:hover {
+    border-color: token('checkbox-focus-border-color');
+  }
+
+  &:focus {
+    border-color: token('checkbox-focus-border-color');
+    box-shadow: 0 0 0 0.25rem token('checkbox-focus-boxshadow-color');
+  }
+}

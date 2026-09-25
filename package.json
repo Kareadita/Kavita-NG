@@ -11,7 +11,10 @@
     "test:browser": "ng test kavita-ng -c browser",
     "test:demo": "ng test demo",
     "e2e": "playwright test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "tokens": "node scripts/tokens.mjs",
+    "tokens:check": "node scripts/tokens.mjs --check",
+    "tokens:kavita": "node scripts/tokens.mjs --kavita"
   },
   "private": true,
   "packageManager": "npm@11.13.0",
@@ -33,14 +36,19 @@
     "@playwright/test": "~1.63.0",
     "@vitest/browser-playwright": "~5.0.2",
     "angular-eslint": "22.5.0",
+    "bootstrap": "^5.3.8",
     "eslint": "^10.9.1",
     "jsdom": "^30.0.0",
     "ng-packagr": "^22.2.0",
     "playwright": "~1.63.0",
     "prettier": "^3.8.1",
+    "sass": "~1.104.1",
     "typescript": "~6.0.2",
     "typescript-eslint": "8.69.0",
     "vitest": "^5.0.0"
   },
-  "license": "GPL-3.0-only"
+  "license": "GPL-3.0-only",
+  "workspaces": [
+    "projects/kavita-ng"
+  ]
 }

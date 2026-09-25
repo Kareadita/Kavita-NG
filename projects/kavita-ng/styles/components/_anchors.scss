@@ -1,0 +1,25 @@
+@use '../functions' as *;
+
+a:not(.dark-exempt, .btn) {
+  color: token('primary-color');
+
+  > i {
+    color: token('primary-color');
+  }
+}
+
+a.btn {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

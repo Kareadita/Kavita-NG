@@ -1,0 +1,10 @@
+@use 'bootstrap/scss/bootstrap';
+@use '../styles';
+
+body.base-only-theme {
+  --kng-primary-color: rgb(255, 0, 0);
+}
+
+body.derived-theme {
+  --kng-btn-primary-bg-color: rgb(0, 0, 255);
+}

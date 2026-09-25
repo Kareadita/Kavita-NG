@@ -1,0 +1,37 @@
+@use '../functions' as *;
+
+.list-group-item {
+  color: token('list-group-item-text-color');
+  background-color: token('list-group-item-bg-color');
+  border-width: token('list-group-item-border-width');
+  border-style: token('list-group-item-border-style');
+  border-color: token('list-group-item-border-color');
+  word-break: break-all;
+
+  &:first-child {
+    border-top-left-radius: token('list-group-item-border-radius');
+    border-top-right-radius: token('list-group-item-border-radius');
+    border-width: token('list-group-item-first-border-width');
+  }
+
+  &:last-child {
+    border-bottom-left-radius: token('list-group-item-border-radius');
+    border-bottom-right-radius: token('list-group-item-border-radius');
+    border-width: token('list-group-item-last-border-width');
+  }
+
+  &:hover {
+    color: token('list-group-hover-text-color');
+    background-color: token('list-group-hover-bg-color');
+  }
+
+  &.active {
+    color: token('list-group-hover-text-color');
+    background-color: token('list-group-hover-bg-color');
+    border-color: token('list-group-active-border-color');
+  }
+
+  &.no-hover:hover {
+    background-color: token('list-group-item-bg-color');
+  }
+}

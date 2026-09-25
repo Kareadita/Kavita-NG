@@ -3,7 +3,13 @@
   "version": "0.0.1",
   "description": "Angular components, services, pipes and theme tokens shared by Kavita and related projects",
   "license": "GPL-3.0-only",
-  "keywords": ["angular", "bootstrap", "ng-bootstrap", "kavita", "components"],
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "ng-bootstrap",
+    "kavita",
+    "components"
+  ],
   "homepage": "https://kareadita.github.io/Kavita-NG/",
   "bugs": {
     "url": "https://github.com/Kareadita/Kavita-NG/issues"
@@ -15,7 +21,8 @@
   },
   "peerDependencies": {
     "@angular/common": "^22.0.0",
-    "@angular/core": "^22.0.0"
+    "@angular/core": "^22.0.0",
+    "bootstrap": "^5.3.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -23,5 +30,17 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "exports": {
+    "./styles": {
+      "sass": "./styles/_index.scss"
+    },
+    "./styles/functions": {
+      "sass": "./styles/_functions.scss"
+    },
+    "./styles/fonts": {
+      "sass": "./styles/_fonts.scss"
+    },
+    "./styles/tokens.json": "./styles/tokens.json"
+  }
 }

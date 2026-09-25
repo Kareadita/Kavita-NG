@@ -1,0 +1,56 @@
+@use '../functions' as *;
+
+input:not([type='range']),
+.form-control {
+  background-color: token('input-bg-color');
+  color: token('input-text-color');
+  border-color: token('input-border-color');
+
+  &:focus:not(:checked) {
+    border-color: token('input-focused-border-color');
+    background-color: token('input-bg-color');
+    color: token('input-text-color');
+    box-shadow: 0 0 0 0.25rem token('input-focus-boxshadow-color');
+  }
+
+  // Checkboxes match :read-only even when editable, see https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only
+  &:read-only:not([type='checkbox']) {
+    background-color: token('input-bg-readonly-color');
+    cursor: initial;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &::placeholder {
+    color: token('input-placeholder-color');
+  }
+}
+
+// One rule per vendor pseudo-element, a selector list mixing -webkit- and -moz- is dropped whole by every browser
+.form-range::-webkit-slider-thumb {
+  background-color: token('input-range-color');
+}
+
+.form-range::-moz-range-thumb {
+  background-color: token('input-range-color');
+}
+
+.form-range::-webkit-slider-thumb:active {
+  background-color: token('input-range-active-color');
+}
+
+.form-range::-moz-range-thumb:active {
+  background-color: token('input-range-active-color');
+}
+
+.form-check-input[type='checkbox']:indeterminate {
+  background-color: token('input-bg-color');
+  border-color: token('input-border-color');
+}
+
+.form-text {
+  color: token('text-muted-color');
+}

@@ -1,0 +1,13 @@
+@use '../functions' as *;
+
+.alert-warning {
+  --bs-alert-color: #{token('alert-text-color')};
+  --bs-alert-bg: #{token('alert-bg-color')};
+  --bs-alert-border-color: #{token('warning-color')};
+}
+
+.alert-danger {
+  --bs-alert-color: #{token('alert-text-color')};
+  --bs-alert-bg: #{token('alert-bg-color')};
+  --bs-alert-border-color: #{token('error-color')};
+}

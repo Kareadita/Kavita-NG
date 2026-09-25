@@ -1,14 +1,22 @@
-.header {
-  padding: 1rem;
-  border-bottom: 1px solid currentColor;
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .brand {
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
+  color: var(--kng-navbar-text-color);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.layout {
+  min-height: 0;
 }
 
 .content {
-  padding: 1rem;
+  min-width: 0;
+  overflow-y: auto;
 }

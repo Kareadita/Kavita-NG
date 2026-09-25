@@ -1,0 +1,372 @@
+@use '../functions' as *;
+
+.btn {
+  --bs-btn-disabled-bg: #{token('btn-disabled-bg-color')};
+  --bs-btn-disabled-border-color: #{token('btn-disabled-border-color')};
+  --bs-btn-disabled-color: #{token('btn-disabled-text-color')};
+}
+
+button i {
+  color: token('btn-fa-icon-color');
+}
+
+.btn-primary {
+  color: token('btn-primary-text-color');
+  background-color: token('btn-primary-bg-color');
+  border-color: token('btn-primary-border-color');
+
+  --bs-btn-active-bg: #{token('btn-primary-active-bg-color')};
+  --bs-btn-active-border-color: #{token('btn-primary-active-bg-color')};
+
+  i {
+    color: token('btn-primary-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-primary-hover-text-color');
+    background-color: token('btn-primary-hover-bg-color');
+    border-color: token('btn-primary-hover-border-color');
+
+    i {
+      color: token('btn-primary-hover-text-color');
+    }
+  }
+}
+
+.btn-secondary {
+  color: token('btn-secondary-text-color');
+  background-color: token('btn-secondary-bg-color');
+  border-color: token('btn-secondary-border-color');
+
+  i {
+    color: token('btn-secondary-text-color');
+  }
+}
+
+.btn-warning {
+  color: token('btn-warning-text-color');
+  background-color: token('btn-warning-bg-color');
+  border-color: token('btn-warning-border-color');
+
+  --bs-btn-active-bg: #{token('btn-warning-hover-bg-color')};
+  --bs-btn-active-border-color: #{token('btn-warning-hover-border-color')};
+
+  i {
+    color: token('btn-warning-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-warning-hover-text-color');
+    background-color: token('btn-warning-hover-bg-color');
+    border-color: token('btn-warning-hover-border-color');
+
+    i {
+      color: token('btn-warning-hover-text-color');
+    }
+  }
+}
+
+.btn-danger {
+  color: token('btn-danger-text-color');
+  background-color: token('btn-danger-bg-color');
+  border-color: token('btn-danger-border-color');
+
+  --bs-btn-active-bg: #{token('btn-danger-hover-bg-color')};
+  --bs-btn-active-border-color: #{token('btn-danger-hover-border-color')};
+
+  i {
+    color: token('btn-danger-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-danger-hover-text-color');
+    background-color: token('btn-danger-hover-bg-color');
+    border-color: token('btn-danger-hover-border-color');
+
+    i {
+      color: token('btn-danger-hover-text-color');
+    }
+  }
+}
+
+.btn-outline-primary {
+  color: token('btn-outline-primary-text-color');
+  background-color: transparent;
+  border-color: token('btn-primary-border-color');
+
+  --bs-btn-active-bg: #{token('btn-primary-hover-bg-color')};
+  --bs-btn-active-border-color: #{token('btn-primary-hover-border-color')};
+
+  i {
+    color: token('btn-outline-primary-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-primary-hover-text-color');
+    background-color: token('btn-primary-hover-bg-color');
+    border-color: token('btn-primary-hover-border-color');
+
+    i {
+      color: token('btn-primary-hover-text-color');
+    }
+  }
+}
+
+.btn-outline-secondary {
+  color: token('btn-outline-secondary-text-color');
+  background-color: transparent;
+  border-color: token('btn-secondary-border-color');
+
+  i {
+    color: token('btn-outline-secondary-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-secondary-text-color');
+    background-color: token('btn-secondary-bg-color');
+    border-color: token('btn-secondary-border-color');
+
+    i {
+      color: token('btn-secondary-text-color');
+    }
+  }
+}
+
+.btn-outline-warning {
+  color: token('btn-outline-warning-text-color');
+  background-color: transparent;
+  border-color: token('btn-warning-border-color');
+
+  i {
+    color: token('btn-outline-warning-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-warning-text-color');
+    background-color: token('btn-warning-bg-color');
+    border-color: token('btn-warning-border-color');
+
+    i {
+      color: token('btn-warning-text-color');
+    }
+  }
+}
+
+.btn-outline-danger {
+  color: token('btn-outline-danger-text-color');
+  background-color: transparent;
+  border-color: token('error-color');
+
+  i {
+    color: token('btn-outline-danger-text-color');
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('btn-outline-danger-hover-text-color');
+    background-color: token('error-color');
+    border-color: token('error-color');
+
+    i {
+      color: token('btn-outline-danger-hover-text-color');
+    }
+  }
+}
+
+.btn-actions {
+  color: token('btn-fa-icon-color');
+  border-radius: token('btn-actions-border-radius');
+
+  &:hover {
+    background-color: token('btn-actions-hover-bg');
+  }
+
+  &:active,
+  &:focus-visible {
+    background-color: token('btn-actions-active-bg-color') !important;
+    border-color: transparent !important;
+  }
+}
+
+.btn-close {
+  filter: token('btn-icon-filter') !important;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+  background-color: token('btn-disabled-bg-color');
+  color: token('btn-disabled-text-color');
+  border-color: token('btn-disabled-border-color');
+
+  i {
+    color: token('btn-disabled-text-color');
+  }
+}
+
+button:disabled,
+.form-control:disabled,
+.form-control[readonly],
+.disabled,
+:disabled {
+  cursor: not-allowed;
+}
+
+.btn-link {
+  color: token('body-text-color');
+
+  > i {
+    color: token('body-text-color') !important;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: token('primary-color');
+  }
+}
+
+.btn-icon,
+.btn-primary-text,
+.btn-secondary-text,
+.btn-warning-text,
+.btn-danger-text {
+  cursor: pointer;
+  color: token('body-text-color');
+  border: none;
+
+  i {
+    color: token('body-text-color');
+  }
+
+  &:disabled {
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+  }
+
+  &:hover {
+    color: token('body-text-color');
+    border: none;
+  }
+
+  &.active {
+    border: none;
+
+    > i {
+      color: token('primary-color') !important;
+    }
+  }
+}
+
+.btn-primary-text {
+  color: token('btn-primary-text-text-color');
+
+  i {
+    color: token('btn-primary-text-text-color');
+  }
+
+  &:hover {
+    color: token('btn-primary-text-hover-color');
+
+    i {
+      color: inherit;
+    }
+  }
+}
+
+.btn-secondary-text {
+  color: token('btn-secondary-text-text-color');
+
+  i {
+    color: token('btn-secondary-text-text-color');
+  }
+
+  &:hover {
+    color: token('btn-secondary-text-hover-color');
+
+    i {
+      color: inherit;
+    }
+  }
+}
+
+.btn-warning-text {
+  color: token('btn-warning-text-text-color');
+
+  i {
+    color: token('btn-warning-text-text-color');
+  }
+
+  &:hover {
+    color: token('btn-warning-text-hover-color');
+
+    i {
+      color: inherit;
+    }
+  }
+}
+
+.btn-danger-text {
+  color: token('btn-danger-text-text-color');
+
+  i {
+    color: token('btn-danger-text-text-color');
+  }
+
+  &:hover {
+    color: token('btn-danger-text-hover-color');
+
+    i {
+      color: inherit;
+    }
+  }
+}
+
+.btn.btn-secondary.alt {
+  background-color: token('btn-alt-bg-color');
+  border-color: token('btn-alt-border-color');
+
+  &:hover {
+    background-color: token('btn-alt-hover-bg-color');
+    font-weight: token('btn-secondary-font-weight');
+  }
+
+  &:focus-visible {
+    background-color: token('btn-alt-focus-bg-color');
+    box-shadow: 0 0 0 0.05rem token('btn-alt-focus-boxshadow-color');
+    font-weight: token('btn-secondary-font-weight');
+  }
+}
+
+.btn-check:focus-visible + .btn,
+.btn:focus-visible {
+  box-shadow: 0 0 0 token('btn-focus-ring-width') token('btn-focus-boxshadow-color');
+  outline: none;
+}
+
+.btn-group.dropdown button.dropdown-item {
+  i {
+    color: token('dropdown-item-text-color');
+  }
+
+  &:hover i {
+    color: token('dropdown-item-hover-text-color');
+  }
+}
+
+.btn-unstyled {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
