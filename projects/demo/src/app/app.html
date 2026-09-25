@@ -1,7 +1,22 @@
-<header class="header">
-  <a class="brand" routerLink="/">Kavita-NG</a>
+<header class="navbar flex-nowrap px-3 py-2">
+  <div class="d-flex align-items-center gap-2">
+    <button
+      type="button"
+      class="btn btn-secondary-text btn-sm d-md-none"
+      aria-controls="side-nav"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="menuOpen.set(!menuOpen())"
+    >
+      Menu
+    </button>
+    <a class="brand fw-bold" routerLink="/">Kavita-NG</a>
+  </div>
+  <demo-theme-switcher />
 </header>
 
-<main class="content">
-  <router-outlet />
-</main>
+<div class="layout d-flex flex-fill position-relative">
+  <demo-side-nav id="side-nav" [open]="menuOpen()" (navigated)="menuOpen.set(false)" />
+  <main class="content flex-fill p-3 p-md-4">
+    <router-outlet />
+  </main>
+</div>

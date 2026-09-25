@@ -1,0 +1,6 @@
+@use '../functions' as *;
+
+.offcanvas {
+  color: token('drawer-text-color');
+  background-color: token('drawer-bg-color');
+}

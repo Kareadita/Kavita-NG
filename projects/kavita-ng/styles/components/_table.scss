@@ -1,0 +1,21 @@
+@use '../functions' as *;
+
+.table {
+  thead {
+    --bs-table-color-state: #{token('table-header-text-color')};
+    --bs-table-bg: #{token('table-header-bg-color')};
+  }
+
+  tbody {
+    --bs-table-color-state: #{token('table-body-text-color')};
+    --bs-table-bg: #{token('table-body-bg-color')};
+  }
+
+  tr {
+    border-style: token('table-body-border');
+  }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  --bs-table-bg: #{token('table-body-striped-bg-color')};
+}

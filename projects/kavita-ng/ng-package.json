@@ -3,5 +3,10 @@
   "dest": "../../dist/kavita-ng",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    "styles/**/*.scss",
+    "styles/tokens.json",
+    "styles/fonts/*"
+  ]
 }

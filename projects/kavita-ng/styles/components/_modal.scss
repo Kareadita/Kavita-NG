@@ -1,0 +1,24 @@
+@use '../functions' as *;
+
+.modal-content {
+  color: token('body-text-color');
+  background-color: token('modal-bg-color');
+  font-size: 0.9rem;
+}
+
+.modal-header {
+  border-bottom: 1px solid token('modal-footer-border-top-color');
+}
+
+.modal-body {
+  background-color: token('modal-body-bg-color');
+}
+
+.modal-footer {
+  border-top: 1px solid token('modal-footer-border-top-color');
+  background-color: token('modal-footer-bg-color');
+}
+
+.modal-title {
+  word-break: break-all;
+}

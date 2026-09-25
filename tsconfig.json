@@ -6,7 +6,9 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "resolveJsonModule": true,
     "paths": {
+      "@kareadita/kavita-ng/styles/tokens.json": ["./projects/kavita-ng/styles/tokens.json"],
       "@kareadita/kavita-ng": ["./projects/kavita-ng/src/public-api.ts"],
       "@kareadita/kavita-ng/*": ["./projects/kavita-ng/*/src/public-api.ts"]
     },

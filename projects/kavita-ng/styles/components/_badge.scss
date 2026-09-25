@@ -1,0 +1,5 @@
+@use '../functions' as *;
+
+.bg-primary {
+  background-color: token('primary-color') !important;
+}

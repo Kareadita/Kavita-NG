@@ -1,0 +1,81 @@
+@use '../functions' as *;
+
+.nav {
+  --bs-nav-link-disabled-color: #{token('nav-link-disabled-color')};
+}
+
+.nav-link {
+  color: token('nav-link-text-color');
+
+  &:hover,
+  &:focus {
+    color: token('nav-link-hover-text-color');
+    text-decoration: none;
+  }
+
+  &.active {
+    color: token('nav-link-active-text-color');
+    background-color: token('nav-link-bg-color');
+  }
+}
+
+.nav-pills .nav-link.active {
+  color: token('nav-link-active-text-color');
+  background-color: token('nav-link-bg-color');
+}
+
+.nav-tabs {
+  border-color: transparent;
+
+  .nav-item {
+    border-color: transparent;
+    border-width: 0 0 1px 0;
+  }
+
+  .nav-link {
+    color: token('nav-link-text-color');
+    position: relative;
+    border-width: token('nav-tab-border-width');
+    border-radius: 0;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+
+    &.active,
+    &:focus {
+      color: token('nav-tab-active-text-color');
+      background-color: token('nav-tab-bg-color');
+      border-top-color: token('nav-tab-border-top');
+      border-left-color: token('nav-tab-border-left');
+      border-bottom-color: token('nav-tab-border-bottom');
+      border-right-color: token('nav-tab-border-right');
+      transform: scaleY(1);
+    }
+
+    &:hover {
+      color: token('nav-tab-hover-text-color');
+      background-color: token('nav-tab-hover-bg-color');
+      border-top-color: token('nav-tab-hover-border-top');
+      border-left-color: token('nav-tab-hover-border-left');
+      border-bottom-color: token('nav-tab-hover-border-bottom');
+      border-right-color: token('nav-tab-hover-border-right');
+    }
+
+    &.active:hover {
+      background-color: token('nav-tab-active-hover-bg-color');
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      background: token('nav-tab-active-hover-bg-color');
+      z-index: -1;
+      transition: transform 0.2s;
+    }
+  }
+}

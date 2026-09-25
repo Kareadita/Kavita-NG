@@ -1,0 +1,20 @@
+<nav class="py-3" aria-label="Sections">
+  @for (group of groups; track group.label) {
+    <h2 class="group-heading text-uppercase fw-semibold px-3 mb-1">{{ group.label }}</h2>
+    <ul class="list-unstyled mb-3">
+      @for (section of group.sections; track section.path) {
+        <li>
+          <a
+            class="d-block px-3 py-1"
+            [routerLink]="'/' + section.path"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="navigated.emit()"
+            >{{ section.label }}</a
+          >
+        </li>
+      }
+    </ul>
+  }
+</nav>

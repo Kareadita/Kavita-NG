@@ -1,0 +1,8 @@
+<label class="d-flex align-items-center gap-2 mb-0">
+  <span class="small">Theme</span>
+  <select class="form-select form-select-sm" (change)="select($any($event.target).value)">
+    @for (t of themes; track t.id) {
+      <option [value]="t.id" [selected]="t.id === theme()">{{ t.label }}</option>
+    }
+  </select>
+</label>
