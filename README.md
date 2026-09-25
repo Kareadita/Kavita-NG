@@ -36,6 +36,10 @@ Create `projects/kavita-ng/<name>/ng-package.json` containing `{ "lib": { "entry
 
 Add it to `projects/kavita-ng/styles/tokens.json`, run `npm run tokens`, then use it in SCSS as `token('name')`. A value of `"@other-token"` makes it derived: no default of its own, it follows `other-token`. `null` means no default at all. `"kavita"` names the Kavita variable it maps from when that is not the same name without the prefix, or `false` when Kavita has none.
 
+## Testing in Kavita
+
+See [docs/testing-in-kavita.md](docs/testing-in-kavita.md) to run Kavita against a local build before publishing.
+
 ## Releasing
 
 1. Bump `version` in `projects/kavita-ng/package.json`.
