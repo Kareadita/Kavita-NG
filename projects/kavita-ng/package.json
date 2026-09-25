@@ -1,6 +1,6 @@
 {
   "name": "@kareadita/kavita-ng",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular components, services, pipes and theme tokens shared by Kavita and related projects",
   "license": "GPL-3.0-only",
   "keywords": [

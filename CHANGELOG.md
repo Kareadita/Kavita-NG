@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.0.2
 
 - `@kareadita/kavita-ng/styles`: `--kng-*` theme tokens and Bootstrap overrides for buttons, inputs, selects, checkboxes, radios, tabs, navbar, dropdowns, lists, tables, pagination, progress, alerts, accordion, breadcrumb, modal, offcanvas, popover and tooltip, plus shared globals (`.setting-section-break`, `.dot-separator`, reduced motion, `.no-animations`)
 - `@kareadita/kavita-ng/styles/fonts`: optional Poppins `@font-face`
