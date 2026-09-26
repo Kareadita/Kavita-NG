@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "ஒருபோதும்",
+    "mobile": "மொபைல்",
+    "tablet": "டேப்லெட்",
+    "desktop": "டெச்க்டாப்"
+  },
+  "default-date-pipe": {
+    "never": "ஒருபோதும்"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} வினாடிகள்",
+    "minutes": "{{num}} நிமிடங்கள்",
+    "hours": "{{num}} மணிநேரம்",
+    "combo": "{{hour}}ம {{min}}நி"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} மணிநேரம்",
+    "minutes": "{{value}} நிமிடங்கள்",
+    "days": "{{value}} நாட்கள்",
+    "months": "{{value}} மாதங்கள்",
+    "years": "{{value}} ஆண்டுகள்"
+  }
+}

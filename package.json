@@ -14,7 +14,12 @@
     "lint": "ng lint",
     "tokens": "node scripts/tokens.mjs",
     "tokens:check": "node scripts/tokens.mjs --check",
-    "tokens:kavita": "node scripts/tokens.mjs --kavita"
+    "tokens:kavita": "node scripts/tokens.mjs --kavita",
+    "i18n": "node scripts/i18n.mjs",
+    "i18n:check": "node scripts/i18n.mjs --check",
+    "i18n:import": "node scripts/i18n.mjs --import",
+    "pack": "npm run build:lib && npm pack ./dist/kavita-ng --pack-destination dist",
+    "deploy:kavita": "node scripts/deploy-kavita.mjs"
   },
   "private": true,
   "packageManager": "npm@11.13.0",
@@ -25,6 +30,7 @@
     "@angular/forms": "^22.2.0",
     "@angular/platform-browser": "^22.2.0",
     "@angular/router": "^22.2.0",
+    "@jsverse/transloco": "^8.4.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

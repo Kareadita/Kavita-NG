@@ -164,6 +164,11 @@ export const NAV_GROUPS: NavGroup[] = [
         label: 'Utilities',
         loadComponent: () => import('./pages/utilities/utilities').then((m) => m.Utilities),
       },
+      {
+        path: 'pipes',
+        label: 'Pipes',
+        loadComponent: () => import('./pages/pipes/pipes').then((m) => m.Pipes),
+      },
     ],
   },
 ];

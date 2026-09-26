@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "從不",
+    "mobile": "手機",
+    "tablet": "平板",
+    "desktop": "桌面版"
+  },
+  "default-date-pipe": {
+    "never": "從不"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} 秒",
+    "minutes": "{{num}} 分鐘",
+    "hours": "{{num}} 小時",
+    "combo": "{{hour}} 小時 {{min}} 分鐘"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}}小時",
+    "minutes": "{{value}}分鐘",
+    "days": "{{value}}天",
+    "months": "{{value}}月",
+    "years": "{{value}}年"
+  }
+}

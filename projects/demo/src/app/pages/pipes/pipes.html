@@ -1,0 +1,129 @@
+<h1>Pipes</h1>
+<p class="lead">
+  Generic pipes from <code>&#64;kareadita/kavita-ng/pipes</code>. Text, dates and numbers follow the
+  active Transloco language.
+</p>
+
+<label class="d-flex align-items-center gap-2 mb-3 language">
+  <span>Language</span>
+  <select class="form-select form-select-sm" (change)="select($any($event.target).value)">
+    @for (l of languages; track l) {
+      <option [value]="l" [selected]="l === lang()">{{ l }}</option>
+    }
+  </select>
+</label>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Template</th>
+      <th scope="col">Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ null | defaultDate }}</code>
+      </td>
+      <td>{{ null | defaultDate }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ null | defaultValue }}</code>
+      </td>
+      <td>{{ null | defaultValue }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 1536000 | bytes }}</code>
+      </td>
+      <td>{{ 1536000 | bytes }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 1234567 | compactNumber }}</code>
+      </td>
+      <td>{{ 1234567 | compactNumber }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 7500 | duration }}</code>
+      </td>
+      <td>{{ 7500 | duration }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 50 | timeDuration }}</code>
+      </td>
+      <td>{{ 50 | timeDuration }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ threeHoursAgo | timeDifference }}</code>
+      </td>
+      <td>{{ threeHoursAgo | timeDifference }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ inTwoDays | timeDifference }}</code>
+      </td>
+      <td>{{ inTwoDays | timeDifference }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ '2015-06-15T09:03:01' | utcToLocalTime }}</code>
+      </td>
+      <td>{{ '2015-06-15T09:03:01' | utcToLocalTime }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ '2015-06-15T09:03:01' | utcToLocalTime: 'mediumDate' }}</code>
+      </td>
+      <td>{{ '2015-06-15T09:03:01' | utcToLocalTime: 'mediumDate' }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ '2015-06-15T09:03:01' | utcToLocalTime: 'full' }}</code>
+      </td>
+      <td>{{ '2015-06-15T09:03:01' | utcToLocalTime: 'full' }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ '9999-12-31T00:00:00' | utcToLocalTime }}</code>
+      </td>
+      <td>{{ '9999-12-31T00:00:00' | utcToLocalTime }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ '2015-06-15T09:03:01' | utcToLocalDate | timeDifference }}</code>
+      </td>
+      <td>{{ '2015-06-15T09:03:01' | utcToLocalDate | timeDifference }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ tablet | breakpoint }}</code>
+      </td>
+      <td>{{ tablet | breakpoint }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 'hello world' | sentenceCase }}</code>
+      </td>
+      <td>{{ 'hello world' | sentenceCase }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{
+          'A title far too long for a narrow column' | truncate: 20 : true
+        }}</code>
+      </td>
+      <td>{{ 'A title far too long for a narrow column' | truncate: 20 : true }}</td>
+    </tr>
+    <tr>
+      <td>
+        <code ngNonBindable>{{ 'javascript:alert(1)' | safeUrl }}</code>
+      </td>
+      <td>{{ 'javascript:alert(1)' | safeUrl }}</td>
+    </tr>
+  </tbody>
+</table>

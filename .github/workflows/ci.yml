@@ -21,6 +21,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run lint
       - run: npm run tokens:check
+      - run: npm run i18n:check
       - run: npx ng test kavita-ng
       - run: npx ng test kavita-ng -c browser
       - run: npx ng test demo

@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "無し",
+    "mobile": "モバイル",
+    "tablet": "タブレット",
+    "desktop": "デスクトップ"
+  },
+  "default-date-pipe": {
+    "never": "無し"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} 秒",
+    "minutes": "{{num}} 分",
+    "hours": "{{num}} 時間",
+    "combo": "{{hour}} 時間 {{min}} 分"
+  },
+  "time-difference-pipe": {
+    "never": "一度もない",
+    "just-now": "ちょうど今",
+    "min": {
+      "ago": "1 分前",
+      "in": "1 分以内"
+    },
+    "mins": {
+      "ago": "{{value}} 分前",
+      "in": "{{value}} 分以内"
+    },
+    "hour": {
+      "ago": "1 時間前",
+      "in": "1 時間以内"
+    },
+    "hours": {
+      "ago": "{{value}} 時間前",
+      "in": "{{value}} 時間以内"
+    },
+    "day": {
+      "ago": "1 日前",
+      "in": "1 日以内"
+    },
+    "days": {
+      "ago": "{{value}} 日前",
+      "in": "{{value}} 日以内"
+    },
+    "month": {
+      "ago": "1 ヶ月前",
+      "in": "1 ヶ月以内"
+    },
+    "months": {
+      "ago": "{{value}} ヶ月前",
+      "in": "{{value}} ヶ月以内"
+    },
+    "year": {
+      "ago": "1 年前",
+      "in": "1 年以内"
+    },
+    "years": {
+      "ago": "{{value}} 年前",
+      "in": "{{value}} 年以内"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} 時間",
+    "minutes": "{{value}} 分",
+    "days": "{{value}} 日",
+    "months": "{{value}} ヶ月",
+    "years": "{{value}} 年"
+  }
+}

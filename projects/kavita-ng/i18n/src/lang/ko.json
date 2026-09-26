@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "없음",
+    "mobile": "모바일",
+    "tablet": "태블릿",
+    "desktop": "데스크탑"
+  },
+  "default-date-pipe": {
+    "never": "없음"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} 초",
+    "minutes": "{{num}} 분",
+    "hours": "{{num}} 시간",
+    "combo": "{{hour}}시 {{min}}분"
+  },
+  "time-difference-pipe": {
+    "never": "없음",
+    "just-now": "방금",
+    "min": {
+      "ago": "1분 전",
+      "in": "1분 후"
+    },
+    "mins": {
+      "ago": "{{value}}분 전",
+      "in": "{{value}}분 후"
+    },
+    "hour": {
+      "ago": "1시간 전",
+      "in": "1시간 후"
+    },
+    "hours": {
+      "ago": "{{value}}시간 전",
+      "in": "{{value}}시간 후"
+    },
+    "day": {
+      "ago": "1일 전",
+      "in": "1일 후"
+    },
+    "days": {
+      "ago": "{{value}}일 전",
+      "in": "{{value}}일 후"
+    },
+    "month": {
+      "ago": "1달 전",
+      "in": "1달 후"
+    },
+    "months": {
+      "ago": "{{value}}달 전",
+      "in": "{{value}}달 후"
+    },
+    "year": {
+      "ago": "1년 전",
+      "in": "1년 후"
+    },
+    "years": {
+      "ago": "{{value}}년 전",
+      "in": "{{value}}년 후"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} 시간",
+    "minutes": "{{value}} 분",
+    "days": "{{value}} 일",
+    "months": "{{value}} 달",
+    "years": "{{value}} 년"
+  }
+}

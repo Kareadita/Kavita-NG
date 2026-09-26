@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "Asla",
+    "mobile": "Mobil",
+    "tablet": "Tablet",
+    "desktop": "Masaüstü"
+  },
+  "default-date-pipe": {
+    "never": "Asla"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} saniye",
+    "minutes": "{{num}} dakika",
+    "hours": "{{num}} saat",
+    "combo": "{{hour}}s {{min}}d"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} saat",
+    "minutes": "{{value}} dakika",
+    "days": "{{value}} gün",
+    "months": "{{value}} ay",
+    "years": "{{value}} yıl"
+  }
+}

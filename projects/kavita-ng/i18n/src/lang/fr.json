@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "Jamais",
+    "mobile": "Mobile",
+    "tablet": "Tablette",
+    "desktop": "Bureau"
+  },
+  "default-date-pipe": {
+    "never": "Jamais"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} secondes",
+    "minutes": "{{num}} minutes",
+    "hours": "{{num}} heures",
+    "combo": "{{hour}}h {{min}}mn"
+  },
+  "time-difference-pipe": {
+    "never": "Jamais",
+    "just-now": "juste maintenant",
+    "min": {
+      "ago": "il y a une minute",
+      "in": "dans une minute"
+    },
+    "mins": {
+      "ago": "il y a {{value}} minutes",
+      "in": "dans {{value}} minutes"
+    },
+    "hour": {
+      "ago": "il y a une heure",
+      "in": "dans une heure"
+    },
+    "hours": {
+      "ago": "il y a {{value}} heures",
+      "in": "dans {{value}} heures"
+    },
+    "day": {
+      "ago": "il y a un jour",
+      "in": "dans un jour"
+    },
+    "days": {
+      "ago": "il y a {{value}} jours",
+      "in": "dans {{value}} jours"
+    },
+    "month": {
+      "ago": "il y a un mois",
+      "in": "dans un mois"
+    },
+    "months": {
+      "ago": "il y a {{value}} mois",
+      "in": "dans {{value}} mois"
+    },
+    "year": {
+      "ago": "il y a un an",
+      "in": "dans un an"
+    },
+    "years": {
+      "ago": "il y a {{value}} ans",
+      "in": "dans {{value}} ans"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} heures",
+    "minutes": "{{value}} minutes",
+    "days": "{{value}} jours",
+    "months": "{{value}} mois",
+    "years": "{{value}} années"
+  }
+}

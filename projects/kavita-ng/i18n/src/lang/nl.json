@@ -1,0 +1,17 @@
+{
+  "breakpoint-pipe": {
+    "never": "Nooit",
+    "mobile": "Mobiel",
+    "tablet": "Tablet"
+  },
+  "default-date-pipe": {
+    "never": "Nooit"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} uur",
+    "minutes": "{{value}} minuten",
+    "days": "{{value}} dagen",
+    "months": "{{value}} maanden",
+    "years": "{{value}} jaar"
+  }
+}

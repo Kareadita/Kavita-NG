@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "Nigdy",
+    "mobile": "Urządzenie mobilne",
+    "tablet": "Tablet",
+    "desktop": "Komputer stacjonarny"
+  },
+  "default-date-pipe": {
+    "never": "Nigdy"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} sekund",
+    "minutes": "{{num}} minut",
+    "hours": "{{num}} godzin",
+    "combo": "{{hour}}h {{min}}m"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} godzin",
+    "minutes": "{{value}} minut",
+    "days": "{{value}} dni",
+    "months": "{{value}} miesięcy",
+    "years": "{{value}} lat"
+  }
+}

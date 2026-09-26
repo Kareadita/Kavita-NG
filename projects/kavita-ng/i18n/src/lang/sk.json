@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "Nikdy",
+    "mobile": "Mobil",
+    "tablet": "Tablet",
+    "desktop": "Desktop"
+  },
+  "default-date-pipe": {
+    "never": "Nikdy"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} sekúnd",
+    "minutes": "{{num}} minút",
+    "hours": "{{num}} hodín",
+    "combo": "{{hour}} h{{min}} min"
+  },
+  "time-difference-pipe": {
+    "never": "Nikdy",
+    "just-now": "práve teraz",
+    "min": {
+      "ago": "pred minútou",
+      "in": "o chvíľu"
+    },
+    "mins": {
+      "ago": "Pred {{value}} minútami",
+      "in": "o {{value}} minút"
+    },
+    "hour": {
+      "ago": "pred hodinou",
+      "in": "o hodinu"
+    },
+    "hours": {
+      "ago": "Pred {{value}} hodinami",
+      "in": "o {{value}} hodín"
+    },
+    "day": {
+      "ago": "pred jedným dňom",
+      "in": "za deň"
+    },
+    "days": {
+      "ago": "Pred {{value}} dňami",
+      "in": "o {{value}} dní"
+    },
+    "month": {
+      "ago": "pred mesiacom",
+      "in": "o mesiac"
+    },
+    "months": {
+      "ago": "Pred {{value}} mesiacmi",
+      "in": "o {{value}} mesiacov"
+    },
+    "year": {
+      "ago": "pred rokom",
+      "in": "o rok"
+    },
+    "years": {
+      "ago": "Pred {{value}} rokmi",
+      "in": "o {{value}} rokov"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} hodín",
+    "minutes": "{{value}} minút",
+    "days": "{{value}} dní",
+    "months": "{{value}} mesiacov",
+    "years": "{{value}} rokov"
+  }
+}

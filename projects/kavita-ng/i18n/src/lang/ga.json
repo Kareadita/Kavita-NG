@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "Choíche",
+    "mobile": "Soghluaiste",
+    "tablet": "Táibléad",
+    "desktop": "Deasc"
+  },
+  "default-date-pipe": {
+    "never": "Riamh"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} soicind",
+    "minutes": "{{num}} nóiméad",
+    "hours": "{{num}} uair an chloig",
+    "combo": "{{hour}}u {{min}}n"
+  },
+  "time-difference-pipe": {
+    "never": "Choíche",
+    "just-now": "díreach anois",
+    "min": {
+      "ago": "nóiméad ó shin",
+      "in": "i gceann nóiméid"
+    },
+    "mins": {
+      "ago": "{{value}} nóiméad ó shin",
+      "in": "i {{value}} nóiméad"
+    },
+    "hour": {
+      "ago": "uair an chloig ó shin",
+      "in": "i gceann uair an chloig"
+    },
+    "hours": {
+      "ago": "{{value}} uair an chloig ó shin",
+      "in": "i {{value}} uair an chloig"
+    },
+    "day": {
+      "ago": "lá ó shin",
+      "in": "i lá amháin"
+    },
+    "days": {
+      "ago": "{{value}} lá ó shin",
+      "in": "i {{value}} lá"
+    },
+    "month": {
+      "ago": "mí ó shin",
+      "in": "i mí"
+    },
+    "months": {
+      "ago": "{{value}} mí ó shin",
+      "in": "i {{value}} mí"
+    },
+    "year": {
+      "ago": "bliain ó shin",
+      "in": "i mbliain"
+    },
+    "years": {
+      "ago": "{{value}} bliain ó shin",
+      "in": "i {{value}} bliain"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} uair an chloig",
+    "minutes": "{{value}} nóiméad",
+    "days": "{{value}} laethanta",
+    "months": "{{value}} míonna",
+    "years": "{{value}} blianta"
+  }
+}

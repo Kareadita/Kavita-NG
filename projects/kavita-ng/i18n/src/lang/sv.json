@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "Aldrig",
+    "mobile": "Mobil",
+    "tablet": "Platta",
+    "desktop": "Desktop"
+  },
+  "default-date-pipe": {
+    "never": "Aldrig"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} sekunder",
+    "minutes": "{{num}} minuter",
+    "hours": "{{num}} timmar",
+    "combo": "{{hour}}t {{min}}m"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} timmar",
+    "minutes": "{{value}} minuter",
+    "days": "{{value}} dagar",
+    "months": "{{value}} månader",
+    "years": "{{value}} år"
+  }
+}
