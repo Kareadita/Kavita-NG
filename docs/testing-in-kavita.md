@@ -8,7 +8,14 @@ KavitaOrg/
   Kavita-NG/     this repo
 ```
 
-Replace `<version>` below with the `version` in `projects/kavita-ng/package.json`, for example `0.0.2`.
+Steps 1 to 3 are one command, run in `Kavita-NG` after `npm install` in `Kavita/UI/Web`:
+
+```powershell
+npm run deploy:kavita
+npm run deploy:kavita -- --target D:/elsewhere/Kavita/UI/Web
+```
+
+The manual steps below show what it does. Replace `<version>` with the `version` in `projects/kavita-ng/package.json`, for example `0.0.2`.
 
 ## 1. Build and pack the library
 
@@ -87,7 +94,7 @@ npm start
 
 ## After changing the library
 
-Repeat steps 1 and 2. The dev server picks up the new styles once `.angular/cache` is cleared and it restarts.
+Run `npm run deploy:kavita` again. The dev server picks up the new styles once `.angular/cache` is cleared and it restarts.
 
 ## Undo
 
