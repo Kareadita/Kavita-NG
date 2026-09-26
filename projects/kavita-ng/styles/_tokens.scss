@@ -219,6 +219,8 @@ $tokens: (
   'setting-header-font-size': null,
   'setting-header-font-weight': null,
   'setting-break-color': null,
+  'setting-mobile-breakpoint': null,
+  'setting-tablet-breakpoint': null,
 );
 
 @mixin root-defaults {
@@ -387,4 +389,6 @@ $tokens: (
   --kng-setting-header-font-size: 1.2rem;
   --kng-setting-header-font-weight: bold;
   --kng-setting-break-color: rgba(255, 255, 255, 0.2);
+  --kng-setting-mobile-breakpoint: 768;
+  --kng-setting-tablet-breakpoint: 1280;
 }

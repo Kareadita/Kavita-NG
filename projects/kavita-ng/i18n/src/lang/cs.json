@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "Nikdy",
+    "mobile": "Mobilní",
+    "tablet": "Tablet",
+    "desktop": "Stolní počítač"
+  },
+  "default-date-pipe": {
+    "never": "Nikdy"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} sekund",
+    "minutes": "{{num}} minut",
+    "hours": "{{num}} hodin",
+    "combo": "{{hour}}h {{min}}m"
+  },
+  "time-difference-pipe": {
+    "never": "Nikdy",
+    "just-now": "právě teď",
+    "min": {
+      "ago": "před minutou",
+      "in": "za chvilku"
+    },
+    "mins": {
+      "ago": "před {{value}} minutami",
+      "in": "za {{value}} minut"
+    },
+    "hour": {
+      "ago": "před hodinou",
+      "in": "za hodinu"
+    },
+    "hours": {
+      "ago": "před {{value}} hodinami",
+      "in": "za {{value}} hodin"
+    },
+    "day": {
+      "ago": "před dnem",
+      "in": "za jeden den"
+    },
+    "days": {
+      "ago": "před {{value}} dny",
+      "in": "za {{value}} dní"
+    },
+    "month": {
+      "ago": "před měsícem",
+      "in": "za měsíc"
+    },
+    "months": {
+      "ago": "{{value}} měsíců zpět",
+      "in": "za {{value}} měsíců"
+    },
+    "year": {
+      "ago": "před rokem",
+      "in": "za rok"
+    },
+    "years": {
+      "ago": "před {{value}} lety",
+      "in": "za {{value}} let"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} hodin",
+    "minutes": "{{value}} minut",
+    "days": "{{value}} dní",
+    "months": "{{value}} měsíců",
+    "years": "{{value}} let"
+  }
+}

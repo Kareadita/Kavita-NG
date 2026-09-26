@@ -1,0 +1,12 @@
+{
+  "default-date-pipe": {
+    "never": "Mai"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} ore",
+    "minutes": "{{value}} minuti",
+    "days": "{{value}} giorni",
+    "months": "{{value}} mesi",
+    "years": "{{value}} anni"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "breakpoint-pipe": {
+    "never": "从不",
+    "mobile": "手机",
+    "tablet": "平板",
+    "desktop": "桌面"
+  },
+  "default-date-pipe": {
+    "never": "从不"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} 秒",
+    "minutes": "{{num}} 分钟",
+    "hours": "{{num}} 小时",
+    "combo": "{{hour}}小时 {{min}}分钟"
+  },
+  "time-difference-pipe": {
+    "never": "永不",
+    "just-now": "刚刚",
+    "min": {
+      "ago": "一分钟前",
+      "in": "一分钟后"
+    },
+    "mins": {
+      "ago": "{{value}}分钟前",
+      "in": "{{value}}分钟后"
+    },
+    "hour": {
+      "ago": "一小时前",
+      "in": "一小时后"
+    },
+    "hours": {
+      "ago": "{{value}}小时前",
+      "in": "{{value}}小时后"
+    },
+    "day": {
+      "ago": "一天前",
+      "in": "一天后"
+    },
+    "days": {
+      "ago": "{{value}} 天前",
+      "in": "{{value}}天后"
+    },
+    "month": {
+      "ago": "一个月前",
+      "in": "一个月后"
+    },
+    "months": {
+      "ago": "{{value}}个月前",
+      "in": "{{value}}个月后"
+    },
+    "year": {
+      "ago": "一年前",
+      "in": "一年后"
+    },
+    "years": {
+      "ago": "{{value}} 年前",
+      "in": "{{value}}年前"
+    }
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} 小时",
+    "minutes": "{{value}} 分钟",
+    "days": "{{value}} 天",
+    "months": "{{value}} 月",
+    "years": "{{value}} 年"
+  }
+}

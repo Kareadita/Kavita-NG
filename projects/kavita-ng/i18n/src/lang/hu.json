@@ -1,0 +1,18 @@
+{
+  "default-date-pipe": {
+    "never": "Soha"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} másodperc",
+    "minutes": "{{num}} perc",
+    "hours": "{{num}} óra",
+    "combo": "{{hour}}ó {{min}}p"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} óra",
+    "minutes": "{{value}} perc",
+    "days": "{{value}} nap",
+    "months": "{{value}} hónap",
+    "years": "{{value}} év"
+  }
+}

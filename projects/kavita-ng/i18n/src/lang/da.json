@@ -1,0 +1,15 @@
+{
+  "duration-pipe": {
+    "seconds": "{{num}} sekunder",
+    "minutes": "{{num}} minutter",
+    "hours": "{{num}} timer",
+    "combo": "{{hour}}h {{min}}m"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} timer",
+    "minutes": "{{value}} minutter",
+    "days": "{{value}} dage",
+    "months": "{{value}} måneder",
+    "years": "{{value}} år"
+  }
+}

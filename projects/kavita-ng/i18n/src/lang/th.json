@@ -1,0 +1,9 @@
+{
+  "time-duration-pipe": {
+    "hours": "{{value}} ชั่วโมง",
+    "minutes": "{{value}} นาที",
+    "days": "{{value}} วัน",
+    "months": "{{value}} เดือน",
+    "years": "{{value}} ปี"
+  }
+}

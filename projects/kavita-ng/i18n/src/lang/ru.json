@@ -1,0 +1,18 @@
+{
+  "default-date-pipe": {
+    "never": "Никогда"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} секунд",
+    "minutes": "{{num}} минут",
+    "hours": "{{num}} часов",
+    "combo": "{{hour}}ч {{min}}м"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} часов",
+    "minutes": "{{value}} минут",
+    "days": "{{value}} дней",
+    "months": "{{value}} месяцев",
+    "years": "{{value}} лет"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "breakpoint-pipe": {
+    "never": "Ніколи",
+    "mobile": "Мобільний",
+    "tablet": "Планшет",
+    "desktop": "Робочий стіл"
+  },
+  "default-date-pipe": {
+    "never": "Ніколи"
+  },
+  "duration-pipe": {
+    "seconds": "{{num}} секунд",
+    "minutes": "{{num}} хвилин",
+    "hours": "{{num}} години",
+    "combo": "{{hour}}год {{min}}м"
+  },
+  "time-duration-pipe": {
+    "hours": "{{value}} години",
+    "minutes": "{{value}} хвилин",
+    "days": "{{value}} дні",
+    "months": "{{value}} місяці",
+    "years": "{{value}} роки"
+  }
+}
